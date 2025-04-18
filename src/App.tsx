@@ -1,4 +1,5 @@
 
+import * as React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -8,14 +9,16 @@ import HomePage from "./pages/HomePage";
 import ThemePage from "./pages/ThemePage";
 import AboutPage from "./pages/AboutPage";
 import NotFound from "./pages/NotFound";
-import { useState } from "react";
 
 function App() {
-  // Create a client inside the component to ensure it's properly initialized
-  const [queryClient] = useState(() => new QueryClient());
+  // Create a client as a ref to avoid re-creating it on every render
+  const queryClientRef = React.useRef<QueryClient>()
+  if (!queryClientRef.current) {
+    queryClientRef.current = new QueryClient()
+  }
   
   return (
-    <QueryClientProvider client={queryClient}>
+    <QueryClientProvider client={queryClientRef.current}>
       <TooltipProvider>
         <Toaster />
         <Sonner />
