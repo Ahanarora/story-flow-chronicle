@@ -134,6 +134,34 @@ export const newsThemes: NewsTheme[] = [
         sourceUrl: "https://www.nytimes.com/2024/04/10/us/politics/biden-ukraine-aid-package.html",
         excerpt: "After months of delay, the US Congress approves a $61 billion aid package for Ukraine, including crucial military and economic assistance.",
         detailLevel: 0
+      },
+      {
+        id: "event-12",
+        date: "2024-03-15",
+        title: "Russia intensifies attacks on Ukrainian energy infrastructure",
+        source: "Reuters",
+        sourceUrl: "https://www.reuters.com/world/europe/russia-strikes-ukraine-energy-infrastructure",
+        excerpt: "Russian forces launch widespread missile and drone attacks targeting Ukraine's power plants and electrical grid, causing significant disruptions to civilian infrastructure.",
+        detailLevel: 1,
+        imageUrl: "https://images.unsplash.com/photo-1646558590477-eb38b96993c8"
+      },
+      {
+        id: "event-13",
+        date: "2024-03-22",
+        title: "Ukraine receives advanced air defense systems",
+        source: "Associated Press",
+        sourceUrl: "https://apnews.com/article/ukraine-air-defense-systems",
+        excerpt: "Western allies deliver new air defense systems to Ukraine, significantly enhancing its capability to protect civilian areas from Russian missile attacks.",
+        detailLevel: 1
+      },
+      {
+        id: "event-14",
+        date: "2024-04-05",
+        title: "Major cyberattack disrupts Ukrainian government services",
+        source: "The Guardian",
+        sourceUrl: "https://www.theguardian.com/world/2024/apr/05/ukraine-cyber-attack",
+        excerpt: "Ukrainian government websites and digital services face sophisticated cyberattack, suspected to be coordinated with Russian military operations.",
+        detailLevel: 2
       }
     ]
   },
@@ -217,6 +245,35 @@ export const newsThemes: NewsTheme[] = [
         sourceUrl: "https://www.politico.eu/article/eu-ai-act-regulation-law-europe/",
         excerpt: "The European Union's comprehensive AI regulation comes into effect, setting global regulatory standards.",
         detailLevel: 0
+      },
+      {
+        id: "ai-event-9",
+        date: "2024-04-01",
+        title: "Major breakthrough in AI language understanding",
+        source: "MIT Technology Review",
+        sourceUrl: "https://www.technologyreview.com/2024/04/01/ai-language-understanding",
+        excerpt: "Researchers demonstrate new AI model capable of understanding and generating complex metaphors and cultural references with human-like accuracy.",
+        detailLevel: 1,
+        imageUrl: "https://images.unsplash.com/photo-1677442135068-c2ac9f534c96"
+      },
+      {
+        id: "ai-event-10",
+        date: "2024-04-10",
+        title: "AI system achieves medical diagnosis milestone",
+        source: "Nature",
+        sourceUrl: "https://www.nature.com/articles/d41586-024-01123-7",
+        excerpt: "New AI diagnostic system demonstrates superior accuracy in identifying rare diseases compared to human medical experts.",
+        detailLevel: 2
+      },
+      {
+        id: "ai-event-11",
+        date: "2024-04-15",
+        title: "Global AI safety summit announces new guidelines",
+        source: "Financial Times",
+        sourceUrl: "https://www.ft.com/content/ai-safety-summit-2024",
+        excerpt: "Leading AI companies and governments agree on new set of binding safety protocols for AI development and deployment.",
+        detailLevel: 0,
+        imageUrl: "https://images.unsplash.com/photo-1677442135085-20750b4b6a41"
       }
     ]
   },
@@ -282,6 +339,45 @@ export const newsThemes: NewsTheme[] = [
         sourceUrl: "https://climate.nasa.gov/news/3278/antarctic-sea-ice-hits-record-low-again/",
         excerpt: "Antarctic sea ice extent reaches record minimum for second consecutive year, concerning scientists.",
         detailLevel: 2
+      },
+      {
+        id: "climate-event-7",
+        date: "2024-03-01",
+        title: "Record-breaking heat waves sweep global south",
+        source: "The Guardian",
+        sourceUrl: "https://www.theguardian.com/environment/2024/mar/01/global-heatwave-records",
+        excerpt: "Multiple countries report unprecedented temperatures, raising concerns about accelerating climate change impacts.",
+        detailLevel: 0,
+        imageUrl: "https://images.unsplash.com/photo-1621486872777-e8cf78d6508d"
+      },
+      {
+        id: "climate-event-8",
+        date: "2024-03-15",
+        title: "Major carbon capture breakthrough announced",
+        source: "Scientific American",
+        sourceUrl: "https://www.scientificamerican.com/article/carbon-capture-breakthrough-2024",
+        excerpt: "Scientists develop more efficient and cost-effective carbon capture technology, potentially accelerating climate change mitigation efforts.",
+        detailLevel: 1
+      },
+      {
+        id: "climate-event-9",
+        date: "2024-04-01",
+        title: "Global renewable energy investment hits new record",
+        source: "Bloomberg",
+        sourceUrl: "https://www.bloomberg.com/news/articles/2024-04-01/renewable-energy-investment-record",
+        excerpt: "Worldwide investment in renewable energy projects reaches unprecedented levels, driven by falling costs and policy support.",
+        detailLevel: 1,
+        imageUrl: "https://images.unsplash.com/photo-1466611653911-95081537e5b7"
+      },
+      {
+        id: "climate-event-10",
+        date: "2024-04-12",
+        title: "Arctic sea ice extent hits critical low",
+        source: "NASA Earth Observatory",
+        sourceUrl: "https://earthobservatory.nasa.gov/images/arctic-sea-ice-2024",
+        excerpt: "Satellite data shows Arctic sea ice reaching historically low levels, indicating accelerating polar warming.",
+        detailLevel: 2,
+        imageUrl: "https://images.unsplash.com/photo-1534786875954-48c5ebe99187"
       }
     ]
   }
