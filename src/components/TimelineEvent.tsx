@@ -1,7 +1,6 @@
-
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { NewsEvent } from "@/lib/data/themes";
+import { NewsEvent } from "@/lib/types/news";
 
 interface TimelineEventProps {
   event: NewsEvent;

@@ -1,9 +1,8 @@
-
 import { Card, CardContent, CardFooter, CardHeader } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Calendar } from "lucide-react";
 import { Link } from "react-router-dom";
-import { NewsTheme } from "@/lib/data/themes";
+import { NewsTheme } from "@/lib/types/news";
 
 interface ThemeCardProps {
   theme: NewsTheme;
