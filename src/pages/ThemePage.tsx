@@ -7,6 +7,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import DetailLevelSlider from "@/components/DetailLevelSlider";
 import TimelineEvent from "@/components/TimelineEvent";
+import OpinionsButton from "@/components/OpinionsButton";
 import { getThemeById, getFilteredEvents } from "@/lib/data/themes";
 
 export default function ThemePage() {
@@ -54,16 +55,19 @@ export default function ThemePage() {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/70"></div>
           <div className="container mx-auto px-4 h-full flex flex-col justify-end pb-8 relative z-10">
-            <div className="flex items-center mb-2">
-              <Button variant="outline" size="sm" className="gap-1 bg-white/10 backdrop-blur-sm mr-4" asChild>
-                <Link to="/">
-                  <ArrowLeft className="h-4 w-4" />
-                  <span>Back</span>
-                </Link>
-              </Button>
-              <span className="text-sm text-white/70">
-                Updated {formatDate(theme.updatedAt)}
-              </span>
+            <div className="flex items-center justify-between mb-2">
+              <div className="flex items-center gap-4">
+                <Button variant="outline" size="sm" className="gap-1 bg-white/10 backdrop-blur-sm" asChild>
+                  <Link to="/">
+                    <ArrowLeft className="h-4 w-4" />
+                    <span>Back</span>
+                  </Link>
+                </Button>
+                <span className="text-sm text-white/70">
+                  Updated {formatDate(theme.updatedAt)}
+                </span>
+              </div>
+              <OpinionsButton themeId={themeId || ''} />
             </div>
             <h1 className="text-3xl md:text-4xl font-bold text-white">{theme.title}</h1>
             <p className="text-white/80 md:text-lg mt-2 max-w-3xl">{theme.description}</p>
