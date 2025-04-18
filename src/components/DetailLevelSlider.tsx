@@ -1,6 +1,5 @@
 
 import { Slider } from "@/components/ui/slider";
-import { useState } from "react";
 
 interface DetailLevelSliderProps {
   value: number;
@@ -10,10 +9,7 @@ interface DetailLevelSliderProps {
 export default function DetailLevelSlider({ value, onChange }: DetailLevelSliderProps) {
   const detailLevelDescriptions = [
     "Essential milestones only",
-    "Major events",
-    "Important developments",
-    "Significant details",
-    "Comprehensive coverage",
+    "Major developments",
     "Complete timeline"
   ];
 
@@ -27,7 +23,7 @@ export default function DetailLevelSlider({ value, onChange }: DetailLevelSlider
       </div>
       <Slider 
         min={0} 
-        max={5}
+        max={2}
         step={1}
         value={[value]}
         onValueChange={(value) => onChange(value[0])} 

@@ -44,6 +44,15 @@ export default function TimelineEvent({ event }: TimelineEventProps) {
             </div>
             {importanceBadge()}
           </div>
+          {event.imageUrl && (
+            <div className="mb-4 rounded-lg overflow-hidden">
+              <img 
+                src={event.imageUrl} 
+                alt={event.title}
+                className="w-full h-48 object-cover"
+              />
+            </div>
+          )}
           <p className="text-muted-foreground">{event.excerpt}</p>
         </CardContent>
         <CardFooter className="pt-0 pb-4">
